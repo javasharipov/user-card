@@ -1,0 +1,175 @@
+/* General styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1900px;
+	padding: 10px 10px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+/* card  */
+.card {
+	width: 300px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	overflow: hidden;
+}
+
+.card .banner {
+	height: 100px;
+	background: linear-gradient(135deg, #007bff, #00d4ff);
+}
+
+.card img.user-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	margin-top: -50px;
+}
+
+.card h3 {
+	font-size: 1.5rem;
+	color: #333;
+	margin: 10px 0 5px;
+}
+
+.card span {
+	color: #777;
+	font-size: 0.9rem;
+}
+
+.card strong {
+	display: block;
+	margin: 10px 0;
+	color: #555;
+}
+
+.card p {
+	color: #555;
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+}
+
+.card .buttons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 15px 0;
+}
+
+.card .buttons button {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	cursor: pointer;
+	color: #fff;
+	background-color: #007bff;
+	transition: background-color 0.3s ease;
+}
+
+.card .buttons button:hover {
+	background-color: #0056b3;
+}
+
+.card .socials {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 15px 0;
+}
+
+.card .socials a {
+	color: #555;
+	font-size: 1.5rem;
+	text-decoration: none;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card .socials a:hover {
+	color: #007bff;
+	transform: scale(1.2);
+}
+
+.card .socials a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+}
+
+.loading {
+	display: flex;
+	gap: 16px;
+}
+.loading__item {
+	width: 300px;
+}
+
+/* loading */
+.loading {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 16px;
+}
+
+.loading__item {
+	width: 300px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.loading__banner {
+	height: 100px;
+	background: linear-gradient(135deg, #007bff, #00d4ff);
+	animation: shimmer 1.5s infinite;
+}
+
+.loading__text {
+	height: 20px;
+	background: linear-gradient(135deg, #e0e0e0, #f0f0f0);
+	margin: 10px 15px;
+	border-radius: 5px;
+	animation: shimmer 1.5s infinite;
+}
+
+.loading__text.short {
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -300px 0;
+	}
+	100% {
+		background-position: 300px 0;
+	}
+}
+
+.loading__banner,
+.loading__text {
+	background-size: 600px 100%;
+}
